@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9cc22b</color>
+    <color name="colorPrimaryOppacity">#969cc22b</color>
+    <color name="colorPrimaryDark">#80a60f</color>
+    <color name="colorAccent">#075e54</color>
+    <color name="colorActionMode">#63075e54</color>
+
+    <color name="colorPrimaryPix">#075e54</color>
+    <color name="colorPrimaryLightPix">#80075e54</color>
+
+
+    <color name="colorBG">#263242</color>
+    <color name="blackOpacity">#A6000000</color>
+    <color name="brown">#3E2723</color>
+    <color name="yellow">#eacb20</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="darkGray">#ebebeb</color>
+    <color name="gray">#aea4a4</color>
+    <color name="textKajian">#A6000000</color>
+
+    <color name="list_item_selected_state">#649cc22b</color>
+    <color name="list_item_normal_state">#FFFFFF</color>
+    <color name="list_item_belum_bayar">#64ff000d</color>
+
+    <color name="colorKajian1">#E3BB4D</color>
+    <color name="colorKajian2">#00BADD</color>
+    <color name="colorKajian3">#59D194</color>
+    <color name="colorKajian4">#DF5376</color>
+
+    <color name="colorMenuBG">#89d4f4</color>
+
+    <color name="colorShalat1">#64ffad36</color>
+    <color name="colorShalat2">#640094d7</color>
+    <color name="colorShalat3">#6450c210</color>
+    <color name="colorShalat4">#64de6762</color>
+    <color name="colorShalat5">#64eacb20</color>
+</resources>

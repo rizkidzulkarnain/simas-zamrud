@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "id.co.zamrud.emaszamrud"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //splash screen
+    implementation 'pro.appus:zoom-splash:1.0.0'
+    //card view
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    //recycler view
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    //retrofit dan okthp
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    //bindview
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //glide image from url
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //slide banner
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    //editText
+    implementation 'com.github.HITGIF:TextFieldBoxes:1.4.4'
+    //datepicker
+    implementation('com.shagi:material-datepicker:1.3') {
+        exclude group: 'com.android.support'
+    }
+    //form library
+    implementation 'it.starksoftware:ssForm:1.1.0'
+    implementation project(path: ':ssForm')
+
+    //objct java to jsonstring
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.8.5'
+    implementation 'com.android.support:multidex:1.0.3'
+    //calendar
+    implementation 'com.github.applikeysolutions:cosmocalendar:1.0.4'
+}

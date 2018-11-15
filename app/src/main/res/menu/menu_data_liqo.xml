@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".module.shop.ShopActivity">
+    <item
+        android:id="@+id/add_data"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="menu logo"
+        app:showAsAction="always" />
+</menu>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.co.zamrud.emaszamrud">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk tools:overrideLibrary="it.starksoftware.ssform"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/medium_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/main_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".module.MenuActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".module.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".module.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".module.shop.ShopActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.shop.AddDataPenjualanActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <!--<activity
+            android:name=".module.MenuActivity"
+            android:theme="@style/AppTheme">
+        </activity>-->
+
+        <activity
+            android:name=".module.shop.EditDataPenjualanActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.liqo.LiqoActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.liqo.AddDataLiqoActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.liqo.EditDataLiqoActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.kajian.KajianActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.shalat.ShalatActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.keuangan.KeuanganActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.keuangan.AddDataKeuanganInActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.keuangan2.Keuangan2Activity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.keuangan.AddDataKeuanganOutActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.keuangan.EditDataKeuanganInActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".module.keuangan.EditDataKeuanganOutActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+    </application>
+</manifest>

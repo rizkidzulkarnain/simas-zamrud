@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutShalat"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/colorShalat1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/jadwal_shalat_font"
+            android:text="Shubuh" />
+
+        <TextView
+            android:id="@+id/waktuShubuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/jadwal_shalat_font"
+            tools:text="04.05 pm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorShalat2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/jadwal_shalat_font"
+            android:text="Dhuhur" />
+
+        <TextView
+            android:id="@+id/waktuDhuhur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/jadwal_shalat_font"
+            tools:text="04.05 pm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorShalat3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/jadwal_shalat_font"
+            android:text="Ashar" />
+
+        <TextView
+            android:id="@+id/waktuAshar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/jadwal_shalat_font"
+            tools:text="04.05 pm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorShalat4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/jadwal_shalat_font"
+            android:text="Maghrib" />
+
+        <TextView
+            android:id="@+id/waktuMaghrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/jadwal_shalat_font"
+            tools:text="04.05 pm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorShalat5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/jadwal_shalat_font"
+            android:text="Isya'" />
+
+        <TextView
+            android:id="@+id/waktuIsya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/jadwal_shalat_font"
+            tools:text="04.05 pm" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,192 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvPenjualan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="5dp"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtNamaProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:text="Mie Indomie Rasa Soto" />
+
+                <LinearLayout
+                    android:id="@+id/layout_harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNamaProd"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harga : " />
+
+                        <TextView
+                            android:id="@+id/txtHarga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textSize="13sp"
+                            tools:text="Rp 5.000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textAlignment="textEnd">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jumlah : " />
+
+                        <TextView
+                            android:id="@+id/txtJmlProd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_toRightOf="@id/txtHarga"
+                            android:gravity="end"
+                            android:textAlignment="textEnd"
+                            android:textSize="13sp"
+                            tools:text="100" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_harga">
+
+                    <TextView
+                        android:id="@+id/label_ket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ket : " />
+
+                    <TextView
+                        android:id="@+id/keterangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        tools:text="Belum di bayar oleh pak ismed karena kemarin lupa bawa uang" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/layout_keterangan">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tglInput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 Sep 2018" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/txtLabelHarga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:text="Total : "
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtJmlProd"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            tools:text="Rp. 100.000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

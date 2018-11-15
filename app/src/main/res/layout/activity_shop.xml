@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.shop.ShopActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:id="@+id/container_tglAwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                app:isResponsiveIconColor="true"
+                app:labelText="From Date">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/tglAwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:textSize="8dp" />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:id="@+id/container_tglAkhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                app:isResponsiveIconColor="true"
+                app:labelText="To Date">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/tglAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:textSize="8dp" />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btGetData"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="@string/get_data"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/layout_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/swipeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvDataPenjualan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false" />
+
+                    <TextView
+                        android:id="@+id/txtError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="@string/error_nodata"
+                        android:textColor="@color/A400red"
+                        android:visibility="visible" />
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lb_total_akhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Total Akhir (Rp.)"
+            android:textColor="@color/blackOpacity"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_akhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end"
+            android:textAlignment="textEnd"
+            android:textColor="@color/blackOpacity"
+            android:textStyle="bold"
+            tools:text="1.000.000" />
+    </LinearLayout>
+</RelativeLayout>

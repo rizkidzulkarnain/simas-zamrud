@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SI-Mas Zamrud</string>
+    <string name="login_desc">Aplikasi SI-Mas Zamrud \n Sistem Informasi Masjid Zamrud\n Komplek Permata Cimahi \n\n Tim IT Remas - 2018</string>
+
+    <!--list main menu title-->
+    <string name="menu1">Tadarrus \n Malam Jumat</string>
+    <string name="menu2">Toko \n Zamrud</string>
+    <string name="menu3">Jadwal Shalat</string>
+    <string name="menu4">Jadwal Pengajian</string>
+    <string name="menu5">Laporan Keuangan</string>
+    <string name="error_nodata">Tidak ada data</string>
+
+    <string name="get_data">GET DATA</string>
+</resources>

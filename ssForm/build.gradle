@@ -1,0 +1,99 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+group = 'it.starksoftware'
+version = '1.2.0'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'ssForm'
+
+    publishedGroupId = 'it.starksoftware'
+    libraryName = 'ssForm'
+    artifact = 'ssForm'
+
+    libraryDescription = 'SSForms is Android library to create dynamic Recyclerview forms'
+
+    siteUrl = 'https://github.com/StarkSoftware/SSForms'
+    gitUrl = 'https://github.com/StarkSoftware/SSForms.git'
+
+    libraryVersion = '1.2.0'
+
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 3
+        versionName "1.2.0"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+/*
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file:////SviluppoSoftware/Android/STARKSOFTWARE/SSFORMS/SSForms")
+        }
+    }
+}
+*/
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.google.android.gms:play-services-places:11.8.0'
+    implementation 'com.codemybrainsout.placesearchdialog:placesearch:1.0.1'
+    implementation 'com.github.Kunzisoft:Android-SwitchDateTimePicker:1.8'
+    implementation 'com.github.MdFarhanRaja:SearchableSpinner:1.9'
+    implementation 'io.reactivex:rxjava:1.3.2'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'cn.pedant.sweetalert:library:1.3'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.jcmore2.collage:collage:1.0.0'
+    implementation 'com.google.android:flexbox:0.3.2'
+    implementation 'com.github.abdularis:CircularImageView:v1.1'
+    implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+}
+
+
+task clearJar(type: Delete) {
+    delete 'build/libs/ssforms-master.jar'
+}
+
+task makeJar(type: Copy) {
+    from('build/bundles/release/')
+    into('release/')
+    include('classes.jar')
+    rename('classes.jar', 'ssforms-master.jar')
+}
+
+makeJar.dependsOn(clearJar, build)
